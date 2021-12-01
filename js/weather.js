@@ -16,7 +16,7 @@
         const temptminElement2 = document.querySelector(".weather-temptmin2");
 
 
-        const day2Element3 = document.querySelector(".dag3");
+        const day3Element3 = document.querySelector(".dag3");
         const iconElement3 = document.querySelector(".weather-icon3");
         const temptmaxElement3 = document.querySelector(".weather-temptmax3");
         const temptminElement3 = document.querySelector(".weather-temptmin3");
@@ -77,19 +77,20 @@
         const day2splittet = day2.substring(6, );
         const day2splittet1 = day2.substring(4,6);
         
-        day1Element2.innerHTML = `${day2splittet}/${day2splittet1}`;
+        day2Element2.innerHTML = `${day2splittet}/${day2splittet1}`;
         iconElement2.innerHTML = `<img src="images/icons/${iconId2}.svg" alt="" width=48/>`;
         temptmaxElement2.innerHTML = `${temptmax2}°C`;
         temptminElement2.innerHTML = `${temptmin2}°C`;
-
 
         var day3 = `${data.dataseries[3].date}`
         var iconId3 = `${data.dataseries[3].weather}`
         var temptmax3 = `${data.dataseries[3].temp2m.max}`
         var temptmin3 = `${data.dataseries[3].temp2m.min}`
 
-        
-        day1Element3.innerHTML = `${day3splittet}/${day3splittet1}`;
+        const day3splittet = day3.substring(6, );
+        const day3splittet1 = day3.substring(4,6);
+
+        day3Element3.innerHTML = `${day3splittet}/${day3splittet1}`;
         iconElement3.innerHTML = `<img src="images/icons/${iconId3}.svg" alt="" width=48/>`;
         temptmaxElement3.innerHTML = `${temptmax3}°C`;
         temptminElement3.innerHTML = `${temptmin3}°C`;
@@ -100,6 +101,10 @@
         var temptmax4 = `${data.dataseries[4].temp2m.max}`
         var temptmin4 = `${data.dataseries[4].temp2m.min}`
 
+        const day4splittet = day4.substring(6, );
+        const day4splittet1 = day4.substring(4,6);
+
+        day4Element4.innerHTML = `${day4splittet}/${day4splittet1}`;
         iconElement4.innerHTML = `<img src="images/icons/${iconId4}.svg" alt="" width=48/>`;
         temptmaxElement4.innerHTML = `${temptmax4}°C`;
         temptminElement4.innerHTML = `${temptmin4}°C`;
@@ -110,6 +115,10 @@
         var temptmax5 = `${data.dataseries[5].temp2m.max}`
         var temptmin5 = `${data.dataseries[5].temp2m.min}`
 
+        const day5splittet = day5.substring(6, );
+        const day5splittet1 = day5.substring(4,6);
+
+        day5Element5.innerHTML = `${day5splittet}/${day5splittet1}`;
         iconElement5.innerHTML = `<img src="images/icons/${iconId5}.svg" alt="" width=48/>`;
         temptmaxElement5.innerHTML = `${temptmax5}°C`;
         temptminElement5.innerHTML = `${temptmin5}°C`;
@@ -120,6 +129,10 @@
         var temptmax6 = `${data.dataseries[6].temp2m.max}`
         var temptmin6 = `${data.dataseries[6].temp2m.min}`
 
+        const day6splittet = day6.substring(6, );
+        const day6splittet1 = day6.substring(4,6);
+
+        day6Element6.innerHTML = `${day6splittet}/${day6splittet1}`;
         iconElement6.innerHTML = `<img src="images/icons/${iconId6}.svg" alt="" width=48/>`;
         temptmaxElement6.innerHTML = `${temptmax6}°C`;
         temptminElement6.innerHTML = `${temptmin6}°C`;
