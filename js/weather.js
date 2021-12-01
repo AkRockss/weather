@@ -1,4 +1,5 @@
 
+        const weekdayElement = document.querySelector(".weekday");
         const dayElement = document.querySelector(".dag");
         const iconElement = document.querySelector(".weather-icon");
         const temptmaxElement = document.querySelector(".weather-temptmax");
@@ -43,7 +44,7 @@
         const days = ["Søn","Man","Tir","Ons","Tor","Fre","Lør"];
         const d = new Date();
         let day = days[d.getDay()];
-        document.getElementById("weekday").innerHTML = day;
+        weekdayElement.innerHTML = day;
 
 
 
