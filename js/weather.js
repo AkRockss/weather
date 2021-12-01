@@ -1,4 +1,5 @@
 
+        const windElement = document.querySelector(".wind");
         const weekdayElement = document.querySelector(".weekday");
         const dayElement = document.querySelector(".dag");
         const iconElement = document.querySelector(".weather-icon");
@@ -53,6 +54,8 @@
            "Jul", "Aug", "Sep", "Okt", "Nov", "Dec" ];
     
     
+        
+        var wind = `${data.dataseries[0].wind10m_max}`
         var day = `${data.dataseries[0].date}`
         var iconId = `${data.dataseries[0].weather}`    
         var temptmax = `${data.dataseries[0].temp2m.max}`
@@ -63,6 +66,7 @@
 
         var selectedMonthName = months[splittet1];
 
+        windElement.innerHTML = `<img src="images/icon-wind.png" alt=""> ${wind}m/s`;
         dayElement.innerHTML = `${splittet} ${selectedMonthName}`;
         iconElement.innerHTML = `<img src="images/icons/${iconId}.svg" alt="" width=100/>`;
         temptmaxElement.innerHTML = `${temptmax}°C`;
