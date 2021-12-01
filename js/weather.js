@@ -38,6 +38,15 @@
         const iconElement6 = document.querySelector(".weather-icon6");
         const temptmaxElement6 = document.querySelector(".weather-temptmax6");
         const temptminElement6 = document.querySelector(".weather-temptmin6");
+
+
+        const days = ["Søn","Man","Tir","Ons","Tor","Fre","Lør"];
+        const d = new Date();
+        let day = days[d.getDay()];
+        document.getElementById("weekday").innerHTML = day;
+
+
+
     $.getJSON('https://www.7timer.info/bin/civillight.php?lon=12.1&lat=55.6&ac=0&unit=metric&output=json&tzshift=0', function(data) {
         var months = ["notzero", "Jan", "Feb", "Mar", "Apr", "Maj", "Jun", 
            "Jul", "Aug", "Sep", "Okt", "Nov", "Dec" ];
