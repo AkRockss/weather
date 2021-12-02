@@ -77,7 +77,22 @@
 											<td> RoomId: {{temp.roomId}} </td>
 											<td> Date: {{temp.date}} </td>
 										</tr>
+										<tr>
+											<td>
+												Average Temperatur: {{averageTemps.toFixed(1)}}
+											</td>
+											<td>
+												Average Humidity: {{averageHumid.toFixed(1)}}
+											</td>
+											<td>
+
+											</td>
+											<td>
+
+											</td>
+										</tr>
 									</table>
+										
 									<div v-else>No Temperature found!</div> 
 								</div>
 									
@@ -107,7 +122,7 @@
 							<div class="forecast-content">
 								<div class="location">Roskilde</div>
 								<div class="degree">
-									<div class="weather-icon"><img src="images/icons/unknown.svg" alt="" width=90/></div>
+									<div class="weather-icon"><img src="images/icons/unknown.svg" alt="" width=90 /></div>
 									<div class="num weather-temptmax">0<sup>o</sup>C</div>
 									<div class="weather-temptmin"></div>
 									<div class="forecast-icon">
@@ -126,6 +141,7 @@
 								</div>
 								<div class="degree weather-temptmax1">0<sup>o</sup>C</div>
 								<div class="weather-temptmin1"><small>0<sup>o</sup></small></div>
+								
 							</div>
 						</div>
 						<div class="forecast">

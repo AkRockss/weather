@@ -6,6 +6,7 @@
         const temptmaxElement = document.querySelector(".weather-temptmax");
         const temptminElement = document.querySelector(".weather-temptmin");
         
+        
         const day1Element1 = document.querySelector(".dag1");
         const iconElement1 = document.querySelector(".weather-icon1");
         const temptmaxElement1 = document.querySelector(".weather-temptmax1");
