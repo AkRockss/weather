@@ -36,6 +36,8 @@ Vue.createApp({
 
         async helperGetAndShowAvg(url) {
             try {
+                this.averageTemps = 0.0
+                this.averageHumid = 0.0
                 const response = await axios.get(url)
                 this.temperaturesAverage = await response.data
 
