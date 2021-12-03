@@ -78,6 +78,10 @@
 											<td> Date: {{temp.date}} </td>
 										</tr>
 										<tr>
+
+											<td>
+												<button id="getAverage" v-on:click="getAverage144" class="btn btn-primary">Get Averages for 5 days</button>
+											</td>
 											<td>
 												Average Temperatur: {{averageTemps.toFixed(1)}}
 											</td>
@@ -85,10 +89,6 @@
 												Average Humidity: {{averageHumid.toFixed(1)}}
 											</td>
 											<td>
-
-											</td>
-											<td>
-
 											</td>
 										</tr>
 									</table>
