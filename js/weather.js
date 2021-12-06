@@ -1,4 +1,6 @@
 
+        // Put data from API to UI
+        
         const windElement = document.querySelector(".wind");
         const weekdayElement = document.querySelector(".weekday");
         const dayElement = document.querySelector(".dag");
@@ -43,20 +45,24 @@
         const temptminElement6 = document.querySelector(".weather-temptmin6");
 
 
+        // set day on weekdays and get date
+        
         const days = ["Søn","Man","Tir","Ons","Tor","Fre","Lør"];
         const d = new Date();
         let day = days[d.getDay()];
         weekdayElement.innerHTML = day;
 
 
+        // Getting json from api
 
     $.getJSON('https://www.7timer.info/bin/civillight.php?lon=12.1&lat=55.6&ac=0&unit=metric&output=json&tzshift=0', function(data) {
         var months = ["notzero", "Jan", "Feb", "Mar", "Apr", "Maj", "Jun", 
            "Jul", "Aug", "Sep", "Okt", "Nov", "Dec" ];
     
     
+        // Put data from API in value
         
-        var wind = `${data.dataseries[0].wind10m_max}`
+           var wind = `${data.dataseries[0].wind10m_max}`
         var day = `${data.dataseries[0].date}`
         var iconId = `${data.dataseries[0].weather}`    
         var temptmax = `${data.dataseries[0].temp2m.max}`
@@ -66,6 +72,9 @@
         const splittet1 = day.substring(4,6);
 
         var selectedMonthName = months[splittet1];
+
+        
+        // Put data from API tinto HTML
 
         windElement.innerHTML = `<img src="images/icon-wind.png" alt=""> ${wind}m/s`;
         dayElement.innerHTML = `${splittet} ${selectedMonthName}`;
