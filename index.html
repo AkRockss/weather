@@ -64,7 +64,7 @@
 
 									<button id="getAllButton" v-on:click="getAllTemperatures" class="btn btn-primary">Get all Temperatures</button>
 
-									<div class="location">Room 1</div>
+									<div class="location">Room </div>
 									
 									<table v-if="temperatures.length" class="table table-striped">
 										<tr v-for="temp in temperatures">
@@ -76,7 +76,7 @@
 										<tr>
 
 											<td>
-												<button id="getAverage" v-on:click="getAverage144" class="btn btn-primary">Get Averages for 5 days</button>
+												<button id="getAverage" v-on:click="getAverage144" class="btn btn-primary">Get Average for a week</button>
 											</td>
 											<td>
 												Average Temperatur: {{averageTemps.toFixed(1)}}
