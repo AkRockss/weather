@@ -21,7 +21,7 @@ Vue.createApp({
         },
 
          // getAverage144() initiates the rest api for use in this method 
-        getAverage144() {
+        getAverage7Days() {
             this.helperGetAndShowAvg(baseUrl2)
 
         },
