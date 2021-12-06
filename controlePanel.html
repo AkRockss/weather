@@ -4,8 +4,6 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
-		
-		<title>Compass Starter by Ariona, Rian</title>
 
 		<!-- Loading third party fonts -->
 		<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
@@ -72,23 +70,24 @@
 								</div>
 								<h2 class="entry-title">Change Temperature</h2>
 								<div id="controlpanel">
+									<h3> The wanted temperature is: {{Temp2}}</h3>
+									<h3> The actual temperature is: {{actualTemp[0].temperature}} </h3>
 									<input id="inputField" v-model="Temperature" placeholder="Temperature">
-									<button id="button" v-on:click="change(Temperature)" class="button">Do it!</button>
-									<div id="outputField" v-if="Temperature"> {{message}}</div>
-								</div>
+									<button id="button" v-on:click="change(Temperature)" class="button">Change</button>
+									
 
-								<h2 class="entry-title">Change Humidity</h2>
-								<div id="controlpanel">
+									<h2 class="entry-title">Change Humidity</h2>
+									<h3> The wanted humidity is: {{Humidity2}}</h3>
+									<h3> The actual humidity is: {{actualTemp[0].humidity}} </h3>
 									<input id="inputField" v-model="Humidity" placeholder="Humidity">
-									<button id="button" v-on:click="change1(Humidity)" class="button">Do it!</button>
-									<div id="outputField" v-if="Humidity"> {{message1}}</div>
+									<button id="button" v-on:click="change1(Humidity)" class="button">Change</button>
+									
+
 								</div>
 
 								<div class="post">
-									<h2 class="entry-title">Nemo enim ipsam voluptatem quia voluptas</h2>
 									<div class="featured-image"><img src="images/featured-image-3.jpg" alt=""></div>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem nulla rem dolores unde et cum illum odio, enim quis odit eveniet quaerat non libero, consequatur voluptatem harum ad veritatis necessitatibus.</p>
-									<a href="single.html" class="button">Read more</a>
+									
 								</div>
 							</div>
 
