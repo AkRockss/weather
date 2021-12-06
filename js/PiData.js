@@ -14,16 +14,19 @@ Vue.createApp({
 
     methods: {
 
+        // getAllTemperatures() initiates the rest api for use in this method 
         getAllTemperatures() {
             this.helperGetAndShow(baseUrl)
 
         },
 
+         // getAverage144() initiates the rest api for use in this method 
         getAverage144() {
             this.helperGetAndShowAvg(baseUrl2)
 
         },
 
+        // helperGetAndShow() inititates the full json from api to be worked with
         async helperGetAndShow(url) {
             try {
                 const response = await axios.get(url)
@@ -34,6 +37,7 @@ Vue.createApp({
             }
         },
 
+        // helperGetAndShowAvg() is the average algorithm for the program
         async helperGetAndShowAvg(url) {
             try {
                 this.averageTemps = 0.0

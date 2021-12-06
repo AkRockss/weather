@@ -26,16 +26,19 @@ Vue.createApp({
 
         },
 
-         // Change() 
+         // Change() initiates the v-onclick in html
         change(Temperature) {
             this.Temp2 = this.Temperature
 
         },
         
+        // change1() initiates the v-onclick in html
         change1(Humidity) {
             this.Humidity2 = this.Humidity
 
         },
+
+        // helperGetAndShow() inititates the full json from api to be worked with
         async helperGetAndShow(url) {
             try {
                 const response = await axios.get(url)
