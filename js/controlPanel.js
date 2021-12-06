@@ -11,8 +11,6 @@ Vue.createApp({
     },
         async created() {
 
-            // created() is a life cycle method, not an ordinary method
-
             // created() is called automatically when the page is loaded
 
             console.log("created method called")
@@ -20,21 +18,23 @@ Vue.createApp({
             this.helperGetAndShow(baseUrl)
         },
     methods: {
+
+         // GetAllTemperatures() initiates the rest api for use in this method 
         
         getAllTemperatures() {
             this.helperGetAndShow(baseUrl)
 
         },
+
+         // Change() 
         change(Temperature) {
             this.Temp2 = this.Temperature
 
-            this.message = "Temperature is changed to " + Temperature
         },
         
         change1(Humidity) {
             this.Humidity2 = this.Humidity
 
-            this.message1 = "Humidity is changed to " + Humidity
         },
         async helperGetAndShow(url) {
             try {
