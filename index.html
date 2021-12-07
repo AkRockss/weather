@@ -67,8 +67,7 @@
 									<button id="getAllButton" v-on:click="getAllTemperatures" class="btn btn-primary">Get Temperature and Humidity</button>
 
 									<div class="location">Room D3.07</div>
-									
-									<table v-if="temperatures.length" class="table table-striped">
+									 									<table v-if="temperatures.length" class="table table-striped">
 										<tr v-for="temp in temperatures">
 											<td> Temperature: {{temp.temperature}} </td>
 											<td> Humidity: {{temp.humidity}} </td>
