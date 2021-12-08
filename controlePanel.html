@@ -70,7 +70,7 @@
 								</div>
 								<h2 class="entry-title">Change Temperature</h2>
 								<div id="controlpanel">
-									<h3> The wanted temperature is: {{Temp2}}</h3>
+									<h3 id= "outputElement">  The wanted temperature is: {{Temp2}}</h3>
 									<h3> The actual temperature is: {{actualTemp[0].temperature}} </h3>
 									<input id="inputField1" v-model="Temperature" placeholder="Temperature">
 									<button id="button" v-on:click="change(Temperature)" class="button">Change</button>
